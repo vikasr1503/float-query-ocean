@@ -31,7 +31,7 @@ const SIH = () => {
           </p>
           <div className="flex justify-center items-center space-x-4 mb-6">
             <Badge variant="outline" className="text-lg px-4 py-2">
-              Problem Statement ID: SIH-2025-OCEAN-001
+              Problem Statement ID: 25040
             </Badge>
             <Badge variant="secondary" className="text-lg px-4 py-2">
               Smart India Hackathon 2025
