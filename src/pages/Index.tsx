@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -34,6 +34,18 @@ const OceanWaves = () => (
 const Index = () => {
   const navigate = useNavigate();
   const [currentRole, setCurrentRole] = useState<"Scientist" | "Policymaker" | "Student">("Scientist");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Don't render until component is mounted and router context is available
+  if (!mounted) {
+    return <div className="min-h-screen bg-gradient-depth flex items-center justify-center">
+      <div className="text-primary-foreground">Loading...</div>
+    </div>;
+  }
 
   const features = [
     {
