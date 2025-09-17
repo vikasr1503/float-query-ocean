@@ -24,7 +24,7 @@ const SIH = () => {
         {/* Title Slide */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold mb-4">
-            <span className="gradient-ocean bg-clip-text text-transparent">FloatChat</span>
+            <span className="gradient-ocean-text">FloatChat</span>
           </h1>
           <p className="text-2xl text-muted-foreground mb-6">
             AI-Powered Ocean Data Portal for ARGO Float Analytics

@@ -131,7 +131,7 @@ const Chat = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-4">
-            <span className="gradient-ocean bg-clip-text text-transparent">FloatChat</span>
+            <span className="gradient-ocean-text">FloatChat</span>
           </h1>
           <p className="text-lg text-muted-foreground mb-2">
             Ask the ocean. Get trusted answers.

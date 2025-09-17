@@ -211,7 +211,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="gradient-ocean bg-clip-text text-transparent">Powerful Features</span>
+              <span className="gradient-ocean-text">Powerful Features</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Advanced AI capabilities designed for modern oceanographic research and decision-making
@@ -246,7 +246,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              Built for <span className="gradient-ocean bg-clip-text text-transparent">Every Ocean Stakeholder</span>
+              Built for <span className="gradient-ocean-text">Every Ocean Stakeholder</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Adaptive interfaces and tailored experiences for different user needs and expertise levels
@@ -339,7 +339,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <Waves className="h-6 w-6 text-primary animate-wave" />
-              <span className="text-xl font-bold gradient-ocean bg-clip-text text-transparent">
+              <span className="text-xl font-bold gradient-ocean-text">
                 FloatChat
               </span>
             </div>

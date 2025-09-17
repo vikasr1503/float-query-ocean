@@ -41,7 +41,7 @@ export const Navigation = ({ currentRole = "Scientist", onRoleChange }: Navigati
               <Waves className="h-8 w-8 text-primary animate-wave" />
               <div className="absolute inset-0 bg-primary/20 rounded-full animate-ripple" />
             </div>
-            <span className="text-xl font-bold gradient-ocean bg-clip-text text-transparent">
+            <span className="text-xl font-bold gradient-ocean-text">
               FloatChat
             </span>
           </div>
