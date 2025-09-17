@@ -144,6 +144,14 @@
     background: var(--gradient-ocean);
   }
   
+  .gradient-ocean-text {
+    background: var(--gradient-ocean);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  
   .gradient-depth {
     background: var(--gradient-depth);
   }

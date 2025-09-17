@@ -133,7 +133,7 @@ const Index = () => {
             {/* Main Headline */}
             <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in">
               <span className="text-primary-foreground">Ask the </span>
-              <span className="gradient-ocean bg-clip-text text-transparent">Ocean</span>
+              <span className="gradient-ocean-text">Ocean</span>
             </h1>
             
             {/* Subheadline */}
