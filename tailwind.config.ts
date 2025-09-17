@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -30,6 +31,14 @@ export default {
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -58,6 +67,21 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
+      backgroundImage: {
+        'gradient-ocean': 'var(--gradient-ocean)',
+        'gradient-depth': 'var(--gradient-depth)',
+        'gradient-surface': 'var(--gradient-surface)',
+        'gradient-data': 'var(--gradient-data)',
+      },
+      boxShadow: {
+        'ocean': 'var(--shadow-ocean)',
+        'depth': 'var(--shadow-depth)',
+        'float': 'var(--shadow-float)',
+      },
+      transitionTimingFunction: {
+        'ocean': 'cubic-bezier(0.23, 1, 0.32, 1)',
+        'wave': 'cubic-bezier(0.19, 1, 0.22, 1)',
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -80,10 +104,32 @@ export default {
             height: "0",
           },
         },
+        "wave": {
+          "0%, 100%": { transform: "translateX(0) rotate(0deg)" },
+          "25%": { transform: "translateX(5px) rotate(1deg)" },
+          "50%": { transform: "translateX(0) rotate(0deg)" },
+          "75%": { transform: "translateX(-5px) rotate(-1deg)" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        "ripple": {
+          "0%": { transform: "scale(0.8)", opacity: "1" },
+          "100%": { transform: "scale(2)", opacity: "0" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "wave": "wave 4s ease-in-out infinite",
+        "float": "float 3s ease-in-out infinite",
+        "ripple": "ripple 2s ease-out infinite",
+        "fade-in": "fade-in 0.5s ease-out",
       },
     },
   },
