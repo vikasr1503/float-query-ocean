@@ -165,7 +165,7 @@ const Index = () => {
                 variant="outline" 
                 size="lg"
                 onClick={() => navigate("/dashboard")}
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-ocean"
               >
                 <BarChart3 className="h-5 w-5 mr-2" />
                 View Dashboard
@@ -317,7 +317,7 @@ const Index = () => {
               variant="outline" 
               size="lg"
               onClick={() => navigate("/dashboard")}
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-ocean"
             >
               <BarChart3 className="h-5 w-5 mr-2" />
               Explore the Dashboard
